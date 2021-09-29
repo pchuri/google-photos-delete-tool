@@ -51,7 +51,7 @@ let deleteTask = setInterval(() => {
 
     setTimeout(() => {
         try {
-            buttons.deleteButton = document.querySelector(ELEMENT_SELECTORS['languageAgnosticDeleteButton']);
+            buttons.deleteButton = document.querySelector('button[aria-label="삭제"]');
             buttons.deleteButton.click();
         } catch {
             buttons.deleteButton = document.querySelector(ELEMENT_SELECTORS['deleteButton']);
